@@ -35,7 +35,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .logo > span {
   color: var(--brand-accent-color);
@@ -46,7 +45,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -64,7 +62,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
 }
 
 .site-contacts .link:hover,
@@ -84,7 +81,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -96,7 +92,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .section-title-item {
@@ -104,14 +99,12 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .section-text {
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 /* *Our team section* */
@@ -128,13 +121,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 /* *==================================================* */
@@ -149,7 +140,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .footer-logo > span {
   color: var(--brand-accent-color);
@@ -160,7 +150,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 .footer-site-contacts .link {
   color: rgba(255, 255, 255, 0.6);
@@ -178,14 +167,12 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .section-text {
   color: var(--main-txt-color);
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 /* *Button* */
 .button {
