@@ -84,7 +84,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -97,7 +96,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -130,14 +128,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
