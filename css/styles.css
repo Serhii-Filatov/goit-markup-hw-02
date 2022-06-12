@@ -1,15 +1,17 @@
 :root {
-  --accent-color: #2196f3;
-  --brand-color: #2196f3;
-  --color-title: #212121;
+  --main-bcg-color: #ffffff;
+  --main-txt-color: #757575;
+  --brand-accent-color: #2196f3;
+  --color-nav: #212121;
+  --logo-color-part: #000000;
   --button-static-color: #f5f4fa;
-  /*TODO палитра цветов макета (текст, фон, выделение) */
+  --hero-footer-bcg: #2f303a;
 }
 
 /* *==================================================* */
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--main-bcg-color);
+  color: var(--main-txt-color);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,73 +21,181 @@ body {
 
 .link {
   text-decoration: none;
+  font-family: inherit;
 }
 
 /* *==================================================* */
 
+/* ************** Studio page ************** */
+
 /* * Header section * */
 .logo {
-  color: #000000;
-
+  color: var(--logo-color-part);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo > span {
-  color: var(--brand-color);
+  color: var(--brand-accent-color);
 }
 /* site nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--color-nav);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--brand-accent-color);
 }
 
 .site-nav .link.current {
-  color: var(--accent-color);
+  color: var(--brand-accent-color);
 }
 
 /* site contacts */
 .site-contacts .link {
-  color: #757575;
-
+  color: var(--main-txt-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .site-contacts .link:hover,
 .site-contacts .link:focus {
-  color: var(--accent-color);
+  color: var(--brand-accent-color);
 }
 
 /* *=================================================* */
 
 /* *Hero section* */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-bcg);
 }
 
 .hero-title {
-  color: #ffffff;
-
+  color: var(--main-bcg-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+/* *==================================================* */
+
+/* *What are we doing section* */
+.section-title {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-title-item {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* *Our team section* */
+.team {
+  background-color: var(--button-static-color);
+}
+
+.team-item {
+  background-color: var(--main-bcg-color);
+}
+
+.team-title-item {
+  color: var(--color-nav);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* *==================================================* */
+
+/* *Footer section* */
+.footer-section {
+  background-color: var(--hero-footer-bcg);
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-bcg-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.footer-logo > span {
+  color: var(--brand-accent-color);
+}
+
+.address {
+  color: var(--main-bcg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer-site-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* *==================================================* */
+
+/* ************** Portfolio page ************** */
+
+/* *Portfolio section* */
+.portfolio-title-item {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-text {
+  color: var(--main-txt-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
 /* *Button* */
 .button {
+  cursor: pointer;
   border: none;
-  color: #212121;
+  color: var(--color-nav);
   font-family: inherit;
   background-color: var(--button-static-color);
 }
@@ -93,61 +203,6 @@ body {
 .button:hover,
 .button:focus {
   border: none;
-  color: #ffffff;
-  background-color: var(--accent-color);
+  color: var(--main-bcg-color);
+  background-color: var(--brand-accent-color);
 }
-/* *==================================================* */
-
-/* *What are we doing section* */
-.section-title {
-  color: var(--color-title);
-}
-.section-title-item {
-  color: var(--color-title);
-}
-
-/* *Our team section* */
-.team {
-  background-color: #f5f4fa;
-}
-
-.team-item {
-  background-color: #ffffff;
-}
-
-/* *==================================================* */
-
-/* *Footer section* */
-.footer-section {
-  background-color: #2f303a;
-}
-.footer-logo {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-}
-.footer-logo > span {
-  color: var(--brand-color);
-}
-
-.address {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-.footer-site-contacts .link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/* UNDONE Шрифти підключаємо одним посиланням (а не двома окремими), не забуваємо вибирати необхідну жирність (для raleway - 700, для roboto - 400, 500, 700, 900). На макеті є ще Oleo Script, але фактично його не використовуємо. */
-
-/* UNDONE Всі кольори тексту та кольори фону виносимо у змінні. Навіть якщо колір поки що використовується один раз, не хвилюйтеся наш проект буде розростатися і їх будемо перевикористовувати, так що виносимо всі кольори в змінні. */
-
-/* UNDONE Коли прописуєте css правила для елементів, не пишіть зайвого. Наприклад, сімейство шрифтів roboto досить раз задати для body, а далі тільки перезаписувати цю властивість за потребою (зокрема, для логотипу). При цьому зверніть увагу, що елементи форми (вас цікавлять на даному етапі кнопки) властивість font-family не успадковують за замовчуванням, тобто для них потрібно задати явно -- font-family: inherit. Також ви часто для всіх елементів прописуєте font-style:normal, але це дефолтне значення. Задавайте цю властивість лише тоді, коли її потрібно перевизначити. */
